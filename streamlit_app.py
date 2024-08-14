@@ -4,7 +4,7 @@ import streamlit as st
 from snowflake.snowpark.functions import col
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-fv_df =st.dataframe()
+fv_df =st.dataframe(data=fruityvice_response)
 
 Name_of_order=st.text_input('Name On the Smoothie ')
 st.write('The Name Of your Smooothie will be :', Name_of_order)
