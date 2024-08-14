@@ -3,6 +3,7 @@ import streamlit as st
 # from snowflake.snowpark.context import get_active_session
 from snowflake.snowpark.functions import col
 import requests
+import panda as py
 Name_of_order=st.text_input('Name On the Smoothie ')
 st.write('The Name Of your Smooothie will be :', Name_of_order)
 # Write directly to the app
