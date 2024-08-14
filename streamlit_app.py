@@ -6,7 +6,6 @@ import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 fv_df = st.dataframe=(data=fruityvice_response.json(), use_contanier_width=True)
 
-
 Name_of_order=st.text_input('Name On the Smoothie ')
 st.write('The Name Of your Smooothie will be :', Name_of_order)
 # Write directly to the app
