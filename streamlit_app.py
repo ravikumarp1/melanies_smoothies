@@ -5,7 +5,7 @@ from snowflake.snowpark.functions import col
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 # st.text(fruityvice_response)
-fv_df = st.dataframe = ( data = fruityvice_response.json() , use_contanier_width() )
+fv_df = st.dataframe = (data = fruityvice_response.json() , use_contanier_width() )
 
 
 Name_of_order=st.text_input('Name On the Smoothie ')
